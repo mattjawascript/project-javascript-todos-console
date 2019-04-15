@@ -1,8 +1,8 @@
 const todos = [
   `Ngopi sampe pagi`,
   `Ngakak sambil jingkrak`,
-  `Ngoding sambil nyemil`,
-  `Ngulang`
+  `Ngoding XOXO`,
+  `Ngemil nasi`
 ];
 
 const show = () => {
@@ -13,8 +13,6 @@ const show = () => {
       console.log(`[${index + 1}] ${item}`);
     }
   };
-
-  // -----------------------------------------------------------------------------
 
   const searchTodos = (data, textToSearch) => {
     let newTodos = [];
@@ -33,11 +31,7 @@ const show = () => {
     return newTodos;
   };
 
-  // -----------------------------------------------------------------------------
-
   showTodos(todos);
-
-  // -----------------------------------------------------------------------------
 
   const textInput = prompt("What todo do you want to search?");
   const foundTodos = searchTodos(todos, textInput);
